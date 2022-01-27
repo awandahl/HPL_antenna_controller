@@ -39,7 +39,7 @@ def A1_K2_A2_mcHF():
     rpi.output(k6, 1)
     rpi.output(k7, 0)
     rpi.output(k8, 1)
-    return render_template('mainx.html')
+    return render_template('main.html')
 
 @app.route('/A1_mcHF_A2_K2')
 def A1_mcHF_A2_K2():
@@ -51,7 +51,7 @@ def A1_mcHF_A2_K2():
     rpi.output(k6, 0)
     rpi.output(k7, 1)
     rpi.output(k8, 0)
-    return render_template('mainx.html', utc_dt=datetime.datetime.utcnow())
+    return render_template('main.html', utc_dt=datetime.datetime.utcnow())
 
 if __name__=="__main__":
     print("Start")
