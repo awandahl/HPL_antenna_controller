@@ -1,15 +1,18 @@
 <html>
   <head>
     <title>Antenna Controller</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
-  <h1>Antenna Controller</h1>
-  <h3>Click here:</h3>
+  <h2>Antenna Controller</h2>
+  <a href=\><button class="button button4">Parking</button></a> {{parking|safe}}<br>
   <br>
-  <h3>{{ utc_dt }}</h3>
-  
-  <a href=\A1_K2_A2_mcHF><button>Antenn 1 = K2 | Antenn 2 = mcHF</button></a><br>
-  <a href=\A1_mcHF_A2_K2><button>Antenn 1 = mcHF | Antenn 2 = K2</button></a><br>
-  
+<a href=\1><button class="button button4">mcHF EFHW | K2 Rybakov</button></a> {{active_1|safe}}<br>
+<a href=\2><button class="button button4">mcHF Rybakov | K2 EFHW</button></a> {{active_2|safe}}<br>
+<a href=\3><button class="button button4">mcHF Rybakov | K2 20M Dipole</button></a> {{active_3|safe}}<br>
+<a href=\4><button class="button button4">mcHF Rybakov | K2 6M Dipole</button></a> {{active_4|safe}}<br>
+<a href=\5><button class="button button4">mcHF EFHW | K2 ANT X</button></a> {{active_5|safe}}<br>
+
   </body>
 </html>
+
