@@ -1,12 +1,11 @@
 [Unit]
-Description=ant_controller Service
-After=network.target
+Description=ant_controller
+After=multi-user.target
 
 [Service]
-User=root
-Group=root
-WorkingDirectory=/home/aw/ant_controller
-ExecStart=/usr/local/bin/uwsgi --socket 192.168.1.39:5000 --protocol http -w app:app
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/[user]/ant_controller/ant.py
 
 [Install]
 WantedBy=multi-user.target
