@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /home/[user]/ant_controller/ant.py
+ExecStart=/usr/bin/python3 /home/[user]/HPL_antenna_controller/ant.py
 
 [Install]
 WantedBy=multi-user.target

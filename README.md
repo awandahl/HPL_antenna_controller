@@ -1,8 +1,8 @@
-# antenna_controller_RPi
+# HPL_antenna_controller
  
- git clone https://github.com/awandahl/antenna_controller_RPi.git    
+ git clone https://github.com/awandahl/HPL_antenna_controller_RPi.git    
  
- cd antenna_controller_RPi    
+ cd HPL_antenna_controller    
  python3 ant.py    
  
  
@@ -18,7 +18,7 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /home/aw/ant_controller/ant.py
+ExecStart=/usr/bin/python3 /home/aw/HPL_ant_controller/ant.py
 
 [Install]
 WantedBy=multi-user.target
