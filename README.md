@@ -1,6 +1,10 @@
 # HPL_antenna_controller
  
- git clone https://github.com/awandahl/HPL_antenna_controller_RPi.git    
+<<<<<<< HEAD
+ git clone https://github.com/awandahl/HPL_antenna_controller.git    
+=======
+ git clone https://github.com/awandahl/HPL_antenna_controller.git    
+>>>>>>> 2d665b1160bbde2b085446121ce6cc3ce68b83e6
  
  cd HPL_antenna_controller    
  python3 ant.py    
