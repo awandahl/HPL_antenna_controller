@@ -1,4 +1,4 @@
-# antenna_controller_RPi
+# HPL_antenna_controller
  
  git clone https://github.com/awandahl/HPL_antenna_controller.git    
  
