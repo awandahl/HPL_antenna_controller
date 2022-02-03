@@ -1,13 +1,10 @@
 # HPL_antenna_controller
  
-<<<<<<< HEAD
- git clone https://github.com/awandahl/HPL_antenna_controller.git    
-=======
- git clone https://github.com/awandahl/HPL_antenna_controller.git    
->>>>>>> 2d665b1160bbde2b085446121ce6cc3ce68b83e6
- 
- cd HPL_antenna_controller    
- python3 ant.py    
+
+git clone https://github.com/awandahl/HPL_antenna_controller.git    
+
+cd HPL_antenna_controller    
+python3 ant.py    
  
  
 Run at system start:    
@@ -22,7 +19,7 @@ After=multi-user.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /home/aw/HPL_ant_controller/ant.py
+ExecStart=/usr/bin/python3 /home/aw/HPL_antenna_controller/ant.py
 
 [Install]
 WantedBy=multi-user.target
