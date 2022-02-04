@@ -15,7 +15,7 @@ nano /etc/systemd/system/ant_controller.service
 ```` 
 [Unit]
 Description=ant_controller
-After=multi-user.target
+#After=multi-user.target
 
 [Service]
 Type=simple
