@@ -5,10 +5,10 @@ This code can be used with a Raspberry Pi or a ASUS Tinker Board 2
 git clone https://github.com/awandahl/HPL_antenna_controller.git    
 
 cd HPL_antenna_controller    
-python3 ant.py  (or asus_ant.py for Asus Tinker Board 2)    
+python3 ant.py  
+python3 asus_ant.py (Asus Tinker Board 2)    
 
-
-Run at system start:    
+For running code at system start:    
 
 nano /etc/systemd/system/ant_controller.service    
 
