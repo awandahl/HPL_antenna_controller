@@ -1,12 +1,13 @@
 [Unit]
 Description=ant_controller
-After=multi-user.target
+Requires=network-online.target
+After=network-online.target
 
 [Service]
-Type=simple
 Restart=always
-
-ExecStart=/usr/bin/python3 /home/[user]/HPL_antenna_controller/ant.py
+# RPi or ASUS Tinker Board 2? Change below! And change user catalogue!
+ExecStart=/usr/bin/python3 /home/aw/HPL_antenna_controller/ant.py
+#ExecStart=/usr/bin/python3 /home/aw/HPL_antenna_controller/asus_ant.py
 
 [Install]
 WantedBy=multi-user.target
