@@ -33,3 +33,10 @@ systemctl enable ant_controller.service
 systemctl start ant_controller.service    
 systemctl stop ant_controller.service    
 
+systemctl status ant_controller.service    
+
+https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs     
+journalctl -u ant_controller.service    
+journalctl -u ant_controller.service --since today   
+journalctl -n 40 -u ant_controller.service     
+
