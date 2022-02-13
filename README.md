@@ -40,3 +40,7 @@ journalctl -u ant_controller.service
 journalctl -u ant_controller.service --since today   
 journalctl -n 40 -u ant_controller.service     
 
+#### Basic authorization of the antenna controller
+https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/     
+
+
